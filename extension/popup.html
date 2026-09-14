@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Video Sync</title>
+
+    <link rel="stylesheet"
+          href="popup.css">
+
+</head>
+
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="logo">
+                <span class="logoIcon">▶</span>
+            </div>
+
+            <div class="headerText">
+
+                <div class="title">
+                    Video Sync
+                </div>
+
+                <div class="subtitle">
+                    Watch together, perfectly synced
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONNECTION -->
+
+        <div class="connectionCard">
+
+            <span
+                id="connectionDot"
+                class="statusDot">
+            </span>
+
+            <span id="connectionStatus">
+                Connecting...
+            </span>
+
+        </div>
+
+
+        <!-- ROOM -->
+
+        <section class="roomCard">
+
+            <div class="sectionLabel">
+                SESSION
+            </div>
+
+
+            <div
+                id="roomStatus"
+                class="roomStatus">
+
+                No active session
+
+            </div>
+
+
+            <div
+                id="roomActions"
+                class="roomActions">
+
+                <button
+                    id="createRoom"
+                    class="primaryButton">
+
+                    <span>＋</span>
+                    Create New Session
+
+                </button>
+
+
+                <div class="joinRow">
+
+                    <input
+                        id="roomInput"
+                        type="text"
+                        placeholder="ROOM CODE"
+                        maxlength="6"
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="joinRoom"
+                        class="secondaryButton">
+
+                        Join
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <button
+                id="leaveRoom"
+                class="leaveButton"
+                style="display:none;">
+
+                Leave Session
+
+            </button>
+
+        </section>
+
+
+        <!-- VIDEO -->
+
+        <section class="videoCard">
+
+            <div class="sectionLabel">
+                VIDEO
+            </div>
+
+
+            <div
+                id="videoStatus"
+                class="videoStatus">
+
+                Checking video...
+
+            </div>
+
+
+            <div
+                id="time"
+                class="time">
+
+                00:00 / 00:00
+
+            </div>
+
+
+            <!-- CONTROLS -->
+
+            <div class="controls">
+
+                <button
+                    id="restart"
+                    class="controlButton">
+
+                    <span>↺</span>
+
+                    <small>
+                        Restart
+                    </small>
+
+                </button>
+
+
+                <button
+                    id="play"
+                    class="playButton">
+
+                    <span>▶</span>
+
+                    <small>
+                        Play
+                    </small>
+
+                </button>
+
+
+                <button
+                    id="pause"
+                    class="controlButton">
+
+                    <span>Ⅱ</span>
+
+                    <small>
+                        Pause
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <button
+                id="sync"
+                class="syncButton">
+
+                <span>⟳</span>
+
+                Sync Now
+
+            </button>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            Both computers can control playback
+
+        </div>
+
+    </div>
+
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
